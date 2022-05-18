@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="./styles/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./styles/index.css"/>
+   
+</head>
+<body>
+    <header>
+    <div class="container container-nav">
+        <div class="logo">
+          <a href="index.html"><img src="./images/group-156.jpg" alt="group-156-logo"/></a>
+        </div>
+    
+        <div class="hamburger" id="hamburger"><img src ="./images/menu-bars-svgrepo-com.svg" alt="hamburger"/></div>
+        <nav>
+            <ul class="nav-ul"id="navLinks">
+            <li><a href="index.html" class="current-page">Features</a></li>
+            <li><a href="Team.html">Team</a></li>
+            <li><a href="Sign_in.html">Sign In</a></li>
+           
+          </ul>
+         
+        </nav>
+      </div>
+      </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 off-md-3">
+                <div class="signup-form">
+                    <form action="" class="mt-5 border p-3 bg-light shadow" id="form">
+                        <h3 class="mb-5 text-secondary">Create your Account</h3>
+                        <div class="row">
+                        <div class="mb-3 col-md-6">
+                            <label for="fname">First Name:<span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" required="required" name="fname" id="fname" placeholder="Enter your first name" />
+                            
+                        </div>
+                        <div class="mb-3 col-md-6">
+                            <label for="lname">Last Name:<span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" required="required" name="lname" id="lname" placeholder="Enter your last name"/>
+                        </div>
+                        <div class="mb-3 col-md-12" >
+                            <label for="email">Email:<span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" required="required" name="email" id="email" placeholder="Enter your email"/>
+                        </div>
+                        <div class="mb-3 col-md-12">
+                            <label for="password">Password:<span class="text-danger">*</span></label>
+                            <input type="password" class="form-control" required="required" name="password" id="password" placeholder="Enter your password"/>
+                        </div>
+                        <div class="mb-3 col-md-12">
+                            <label for="cpassword">Confirm Password:<span class="text-danger">*</span></label>
+                            <div class="p-confirm">
+                            <input type="password" class="form-control" required="required" name="cpassword" id="cpassword" placeholder="Confirm password"/>
+                            <span class="span-eye" id="span-eye" ><img src="/2nd-capstone-project/images/eye_slash.svg" id="show" onclick="myFunction()"alt="hide">
+                            <img src="/2nd-capstone-project/images/eye.svg" class="eye-show" onclick="myFunction()"  style="display:none" id="hide" alt="hide"/>
+                            </span>
+                        </div>
+                          
+                        
+                        </div>
+                            <div class="col-md-12" data-toggle="buttons">
+                                <label>Gender:</label>
+                                <label class="btn btn-success active">
+                                    <input type="radio" name="Gender" id="Male" checked/>Male
+                                </label>
+                                <label class="btn btn-success">
+                                    <input type="radio" name="Gender" id="Female"/>Female
+                                </label>
+                                <lable class="btn btn-success">
+                                    <input type="radio" name="Gender" id="prefer-not-to-say"/>Prefer not to say
+                                </label>
+                            </div>
+                                
+                            <div class="col-md-12"><br>
+                                <button class="btn btn-primary float-end" onclick="return Validate()">Signup Now</button>
+
+                            </div>
+            
+                        </div>
+                    </form>
+                    <p class="text-center mt-3">If you have an account, Please <a href="#">Sign in</a></p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+</body>
+</html>
